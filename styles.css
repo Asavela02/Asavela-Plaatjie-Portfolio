@@ -80,6 +80,7 @@ ul {
 }
 .hero-content .import {
     font-size: 4rem;
+	color: var(--color-2);
 
 }
 .h1-span-1 {
@@ -100,7 +101,7 @@ ul {
     left: 0;
     top: 0.4rem;
     height: 100%;
-    width: 20rem;
+    width: fit-content;
     background-color: white;
     border-left: 2px solid brown;
     animation: animate 4s steps(14) infinite;
@@ -115,7 +116,7 @@ ul {
     }
 }
 .hero-content h2 {
-    margin-left: 5rem;
+    margin-left: 9rem;
     position: relative;
     color: brown;
     text-align: right;
