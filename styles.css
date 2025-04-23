@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     background-image: linear-gradient( to right, white 60%, black 40%);
@@ -54,7 +54,6 @@ ul {
 #toogler {
     font-size: 1.7rem;
     color: white;
-    position: fixed;
 }
 .hidden {
     display: block;
@@ -106,6 +105,7 @@ ul {
     background-color: white;
     border-left: 2px solid brown;
     animation: animate 4s steps(14) infinite;
+	white-space: non-wrap;
 }
 @keyframes animate {
     40%, 60% {
