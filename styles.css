@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    max-width: 120%;
+}
+:root {
+    --color1: #607d8b;
+    --color2: rgb(173, 165, 54);
+}
+body {
+    font-family: sans-serif;
+    overflow-x: hidden
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient( to right, white 60%, black 40%);
+    height: 5rem;
+    z-index: 10;
+}
+nav {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    background-color: brown;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+ul {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+#logo{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: black
+}
+#toogler {
+    font-size: 1.7rem;
+    color: white;
+}
+.show {
+    display: block;
+    z-index: 10;
+}
+
+
+
+/* H E R O - A R E A */
+#hero-area {
+    background-image: linear-gradient( to right, white 60%, black 40%);
+    height: 90vh;
+    position: relative;
+    padding: 2rem;
+    overflow: hidden;
+    
+}
+.hero-content {
+    position: absolute;
+    z-index: 2;
+}
+.hero-image {
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+    width: 17rem;
+}
+.hero-content .import {
+    font-size: 4rem;
+	color: rgb(173, 165, 54);
+
+}
+.h1-span-1 {
+    font-size: 1rem;
+}
+.h1-span-2 {
+    position: relative;
+    color: brown;
+    font-size: 3rem;
+    /*height: 50px;
+    line-height: 50px;*/
+    white-space: nowrap;
+    
+    
+}
+.h1-span-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid brown;
+    animation: animate 4s steps(14) infinite;
+    overflow: hidden;
+}
+@keyframes animate {
+    40%, 60% {
+        left: 100%
+    }
+    100% {
+        left: 0%
+    }
+}
+.hero-content h2 {
+    margin-left: 9rem;
+    position: relative;
+    color: brown;
+    text-align: right;
+    margin-bottom: 1rem;
+    max-width: fit-content;
+
+}
+.hero-content h2:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translate(calc(-100% - 1rem), -50%);
+    height: 0.5rem;
+    width: 150%;
+    background-color: var(--color2);
+}
+.hero-content p {
+	margin-top: 1.5rem;
+    background-color: rgba(245, 245, 220, 0.288);
+    width: 15rem;
+}
+.header-btn {
+    position: absolute;
+    bottom: 2rem;
+}
+.header-btn button {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--color2);
+    font-weight: 600;
+}
+
+
+
+#about-section {
+    position: relative;
+    padding: 3rem 1rem 1rem 1rem;
+   background: linear-gradient(to bottom ,black 10%, rgb(116, 42, 42) 70%, gray);
+    color: gray;
+}
+#info-image {
+    min-width: 16rem;
+    max-width: 30rem;
+    height: 9rem;
+}
+#info-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15rem;
+}
+#info-image h2 {
+    font-size: 3rem;
+    font-weight: 1000;
+    position: absolute;
+    left: 3rem;
+    margin-top: 1rem;
+    z-index: 2;
+    color: brown
+}
+#info-content p {
+    color: white;
+    font-size: 1.1rem; 
+    text-align: center;
+    margin-top: 3rem;
+}
+.linked-in {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    color: var(--color2);
+}
+.linked-in span {
+    font-size: 0.7rem;
+}
+#services-row {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 50px 0;
+    background-color: transparent;
+}
+#services-row h2 {
+    height: 6rem;
+    font-size: 2.2em;
+    color: white;
+    font-weight: 750;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service-card {
+    background-color: rgb(143, 138, 63);
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.9s ease;    
+
+}
+.service-card:hover {
+    transform: scale(1.05);
+}
+.service-card h3 {
+    margin-bottom: 15px;
+    color: brown;
+}
+.service-card p {
+    color: black;
+}
+
+#skills-row {
+    padding: 50px 20px;
+    text-align: center;
+}
+#skills-row h2 {
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    color: white;
+}
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.skill {
+    margin: 20px 0;
+    text-align: left;
+}
+.skill h3 {
+    margin-bottom: 5px;
+    color: white;
+}
+.progress-bar {
+    background-color: #e2e2e2;
+    border-radius: 3rem;
+    overflow: hidden;
+    height: 0.9rem;
+}
+.progress {
+    background-color: #607d8b;
+    height: 100%;
+    transition: width 5s ease;
+}
+
+
+#projects-section {
+    padding: 1rem;
+     background-color: #607d8b;
+ }
+#projects-section h1 {
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+    color: white;
+}
+.work-container{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.work-container h1 {
+    font-size: 1rem;
+}
+.outer-div, .inner-div  {
+	height: 28rem;
+    min-width: 20rem;
+    max-width: 25rem;
+	
+}
+.inner-div {
+	margin: 0 auto;
+	border-radius: 5px;
+	font-weight: 400;
+	color: #071011;
+	font-size: 1rem;
+	text-align: center;
+	transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
+	transform-style: preserve-3d;
+}
+.outer-div:hover .inner-div {
+	transform: rotateY(180deg);
+}
+.front, .back {
+	position: relative;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+.front {
+	cursor: pointer;
+	height: 100%;
+	background: #fff;
+	backface-visibility: hidden;
+	border-radius: 5px;
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.info {
+  margin: 1rem 1rem ;
+  text-align: center;
+  position: absolute;
+}
+.photo {
+	position: relative;
+	height: 80%;
+	width: 100%;
+	background-color: blue; 
+	background-size: cover;
+	backface-visibility: hidden;
+	overflow: hidden;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+.back {
+    position: absolute;
+	transform: rotateY(180deg);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #071011;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    color: #e2e2e2;
+} 
+
+
+
+/*      C O N T A C T - S E C T I O N      */
+#contact-section {
+    background: linear-gradient(to left ,white 70%, black 30%);
+    padding: 2rem 0 4rem 2rem;
+    color: gray
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.heading p {
+    font-size: 3rem;
+    color: brown;
+
+}
+.heading h2 {
+    font-size: 4rem;
+    color: var(--color2);
+}
+form { 
+    position: relative;
+    width: 60%;
+}
+input, textarea {
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    padding: 0.6rem;
+    width: 100%;
+    border: none;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: #607d8b5d;
+    
+ }
+ .button {
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    background-color: #607d8b5d;
+}
+
+.contact-info {
+    position: relative;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--color1);
+    
+}
+/*.contact-info-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}*/
+
+.contact-info-info {
+    position: relative;
+    margin-left: 1rem;
+}
+.contact-info-info::before {
+    position: absolute;
+    content: "";
+    height: 90%;
+    left: -0.8rem;
+    width: 5px;
+    background-color: rgb(173, 165, 54);
+}
+.infos {
+    margin-bottom: 1rem;
+    position: relative;
+    color: brown;
+}
+.infos i {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.bx-envelope {
+    margin-left: 3rem;
+    color: brown;
+
+}
+.bx-phone {
+    margin-left: 2rem;
+    color: brown;
+
+}
+.bx-location-plus {
+    margin-left: 3.4rem;
+    color: brown;
+
+}
+
+.social-icons{
+    position: relative;
+    display: flex;
+    gap: 5rem;
+    width: 80%;
+    left: 10%;
+    margin-top: 1.5rem;
+}
+.social-icons i {
+    font-size: 1.5rem;
+}
+.ion {
+    width: 2.5rem;
+    border-radius: 2.5rem;
+    height: 2rem;
+    background-color: var(--color1);
+    padding: 0.2rem 0.4rem;
+    border: 1px solid var(--color2);
+}
+
+.social-icons a {
+    color: brown;
+}
