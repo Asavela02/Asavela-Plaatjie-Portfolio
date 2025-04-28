@@ -66,7 +66,7 @@ ul {
 /* H E R O - A R E A */
 #hero-area {
     background-image: linear-gradient( to right, white 60%, black 40%);
-    height: 90vh;
+    height: 80vh;
     position: relative;
     padding: 2rem;
     overflow: hidden;
